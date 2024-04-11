@@ -37,6 +37,7 @@ npm run start
 This project uses pre-commit to check if the lint or the building process catches any errors. It only commits if there aren`t
 
 ## Repo
+
 https://bitbucket.org/the-investor-machine/im-landing-page/src/main/
 
 ## IM-APP
