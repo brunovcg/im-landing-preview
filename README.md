@@ -14,11 +14,30 @@ This is The Companies Webpage.
 
 ## Folder Structure
 
--> Assets: Images, Fonts etc
--> Components: Global reusable components
--> Locales: Internationalization Configs and Strings
--> Router: Holds the Routes Declaration and link to Pages
--> Pages: Components that represents a route
+- Assets: Images, Fonts etc
+- Components: Global reusable components
+- Locales: Internationalization Configs and Strings
+- Router: Holds the Routes Declaration and link to Pages
+- Pages: Components that represents a route
+
+## Installation
+
+```bash
+npm i
+```
+
+## Dev Server
+
+```bash
+npm run start
+```
+
+## Pre-commit
+
+This project uses pre-commit to check if the lint or the building process catches any errors. It only commits if there aren`t
+
+## Repo
+https://bitbucket.org/the-investor-machine/im-landing-page/src/main/
 
 ## IM-APP
 
