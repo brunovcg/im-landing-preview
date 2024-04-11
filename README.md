@@ -18,7 +18,7 @@ This is The Companies Webpage.
 -> Components: Global reusable components
 -> Locales: Internationalization Configs and Strings
 -> Router: Holds the Routes Declaration and link to Pages
--> Pages: Components that represents a route 
+-> Pages: Components that represents a route
 
 ## IM-APP
 
