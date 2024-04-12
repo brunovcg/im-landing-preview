@@ -1,21 +1,22 @@
-import { useEffect } from 'react';
+import { Button } from 'components';
 import './Presentation.css';
-import { Video } from 'components';
-import INTRO_VIDEO from 'assets/videos/houses.mp4';
-// import Configs from 'configs/Configs';
-
-// const { previewDemo } = Configs.EXTERNAL_LINKS;
+import { Trans, useTranslation } from 'react-i18next';
 
 export default function Presentation() {
-  useEffect(() => {}, []);
+  const { t } = useTranslation();
 
   return (
     <section className="im-presentation">
-      <Video height="400px" src={INTRO_VIDEO} loop muted controls={false} style={{ width: '100%', objectFit: 'cover' }} />
-      {/* <div className="im-presentation-message">C</div>
-      <div className="im-presentation-video">
-        <iframe src={previewDemo} title="preview-demo" />
-      </div> */}
+      <div className="im-presentation-left">
+        <h2 className="im-title">
+          <Trans i18nKey="Pages.Home.Presentation.BetterLead" components={{ 1: <br /> }} />
+        </h2>
+        <h3 className="im-second-title">{t('Pages.Home.Presentation.AmericasFirst')}</h3>
+        <p className="im-message">{t('Pages.Home.Presentation.DoneForYou')}</p>
+        <p className="im-description">{t('Pages.Home.Presentation.Description')}</p>
+        <Button variant="error" icon="info" text={t('Common.LearnMore')} />
+      </div>
+      <div className="im-presentation-right"> </div>
     </section>
   );
 }

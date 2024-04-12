@@ -1,10 +1,42 @@
 .im-presentation {
   width: 100%;
   display: grid;
-  height: 400px;
+  min-height: 450px;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  padding: 50px;
 
-  .im-presentation-message {
-    background: lightcyan;
+  .im-presentation-left {
+    display: flex;
+    flex-direction: column;
+
+    .im-title {
+      font-size: var(--font-size-13);
+      font-family: var(--typeface-sans-serif);
+      color: var(--primary-color);
+      margin-bottom: 30px;
+    }
+
+    .im-second-title {
+      color: var(--typeface-medium);
+      font-size: var(--font-size-6);
+      margin-bottom: 5px;
+    }
+
+    .im-message {
+      color: var(--typeface-medium);
+      font-size: var(--font-size-5);
+      margin-bottom: 30px;
+    }
+
+    .im-description {
+      color: var(--typeface-light);
+      font-size: var(--font-size-3);
+      line-height: 1.5;
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .im-presentation-right {
   }
 }

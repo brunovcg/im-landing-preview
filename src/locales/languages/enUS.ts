@@ -13,5 +13,15 @@ export const enUS = {
       Testimonials: 'Testimonials',
     },
   },
-  Pages: { Home: { Language: 'US' } },
+  Pages: {
+    Home: {
+      Presentation: {
+        AmericasFirst: 'America`s #1 Lead Generator:',
+        BetterLead: 'Better Lead <1/> Generation.',
+        DoneForYou: 'Done-For-You High Quality Lead Generation.',
+        Description:
+          'Investor Machine - Unrivaled Data, Artificial Intelligence (A.I.) and Machine Learning to Identify Motivated Sellers in YOUR Market!',
+      },
+    },
+  },
 } as const;

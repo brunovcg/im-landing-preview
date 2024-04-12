@@ -1,10 +1,6 @@
-import { ColorsVariant } from 'GlobalTypes';
+import { ColorsVariant, FontSize } from 'GlobalTypes';
 import { iconsMapping } from './IconsMapping';
 import { HTMLProps } from 'react';
-
-export const iconSizes = ['tiny', 'small', 'regular', 'large', 'huge'] as const;
-
-export type IconSize = (typeof iconSizes)[number] | undefined;
 
 export type IconName = keyof typeof iconsMapping;
 
@@ -12,7 +8,7 @@ export const iconWeight = ['duotone', 'regular', 'bold', 'thin', 'fill'] as cons
 
 export type IconWeight = (typeof iconWeight)[number];
 
-type ConditionalStyledIconProps = { size?: IconSize; customSize?: never } | { size?: never; customSize?: string };
+type ConditionalStyledIconProps = { size?: FontSize; customSize?: never } | { size?: never; customSize?: string };
 
 export type IconProps = ConditionalStyledIconProps & {
   icon: IconName;

@@ -5,7 +5,7 @@ import { Icon, LoadingSpinner } from '../index';
 import { ReactUtils } from 'utils';
 import './Video.css';
 
-function Video(
+function VideoComponent(
   {
     src,
     onError,
@@ -70,4 +70,6 @@ function Video(
   );
 }
 
-export default forwardRef(Video);
+const Video = forwardRef(VideoComponent);
+
+export default Video;

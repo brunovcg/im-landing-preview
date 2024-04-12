@@ -1,10 +1,11 @@
 :root {
   /* Variant colors  */
   --primary-color: #11a2dd;
+  --primary-light-color: #6abdde;
   --error-color: #e12f26;
+  --white-color: #fcfcfc;
 
   /* Typeface colors  */
-  --typeface-white: #fcfcfc;
   --typeface-light: #888;
   --typeface-medium: #555;
   --typeface-dark: #111111;
@@ -14,14 +15,22 @@
   --typeface-serif: Times, serif;
   --typeface-monospace: 'Cousine', monospace;
 
+  --transparent: transparent;
+
   /* Font-size  */
-  --font-size-7: 35px;
-  --font-size-6: 25px;
-  --font-size-5: 20px;
-  --font-size-4: 14px;
-  --font-size-3: 12px;
-  --font-size-2: 11px;
-  --font-size-1: 9px;
+  --font-size-13: 56px;
+  --font-size-12: 52px;
+  --font-size-11: 48px;
+  --font-size-10: 44px;
+  --font-size-9: 40px;
+  --font-size-8: 36px;
+  --font-size-7: 32px;
+  --font-size-6: 28px;
+  --font-size-5: 24px;
+  --font-size-4: 20px;
+  --font-size-3: 16px;
+  --font-size-2: 12px;
+  --font-size-1: 8px;
 
   /* Background-color  */
   --background-white: #ffffff;
