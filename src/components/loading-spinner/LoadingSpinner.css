@@ -1,0 +1,26 @@
+.im-loading-spinner {
+  display: flex;
+  gap: 16px;
+  background-color: var(--background-white);
+  align-items: center;
+  justify-content: center;
+
+  &.im-column {
+    flex-direction: column;
+  }
+
+  &.im-row {
+    flex-direction: row;
+  }
+
+  .im-loading-spinner-gear {
+    height: 30px;
+    width: 30px;
+    animation: rotate 4s linear infinite;
+  }
+
+  .im-loading-spinner-message {
+    color: var(--typeface-medium);
+    animation: blink 4s linear infinite;
+  }
+}

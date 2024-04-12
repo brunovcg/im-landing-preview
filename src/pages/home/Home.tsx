@@ -1,12 +1,28 @@
-import Box from 'components/box/Box';
-import { useTranslation } from 'react-i18next';
+import './Home.css';
+import Footer from 'layouts/footer/Footer';
+import FeaturedBy from './components/featured-by/FeaturedBy';
+import Presentation from './components/presentation/Presentation';
+import FAQ from './components/faq/FAQ';
+import SecretWeapon from './components/secret-weapon/SecretWeapon';
+import WhatIsInvestorMachine from './components/what-is-investor-machine/WhatIsInvestorMachine';
+import Testimonials from './components/testimonials/Testimonials';
+import Community from './components/community/Community';
+import GetStarted from './components/get-started/GetStarted';
+import LeadGeneration from './components/lead-generation/LeadGeneration';
 
 export default function Home() {
-  const { t } = useTranslation();
-
   return (
     <div className="im-home">
-      <Box>Investor Machine {t('Pages.Home.Language')}</Box>
+      <Presentation />
+      <FeaturedBy />
+      <Testimonials />
+      <SecretWeapon />
+      <LeadGeneration />
+      <Community />
+      <GetStarted />
+      <WhatIsInvestorMachine />
+      <FAQ />
+      <Footer />
     </div>
   );
 }

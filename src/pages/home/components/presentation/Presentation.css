@@ -1,0 +1,10 @@
+.im-presentation {
+  width: 100%;
+  display: grid;
+  height: 400px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  .im-presentation-message {
+    background: lightcyan;
+  }
+}

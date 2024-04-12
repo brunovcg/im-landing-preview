@@ -21,10 +21,7 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "./",
     "paths": {
-      "components/*": ["./src/components/*"],
-      "pages/*": ["./src/pages/*"],
-      "router/*": ["./src/router/*"],
-      "locales/*": ["/src/locales/*"]
+      "*": ["./src/*"]
     }
   },
   "include": ["src"],

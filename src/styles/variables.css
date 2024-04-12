@@ -1,0 +1,34 @@
+:root {
+  /* Variant colors  */
+  --primary-color: #11a2dd;
+  --error-color: #e12f26;
+
+  /* Typeface colors  */
+  --typeface-white: #fcfcfc;
+  --typeface-light: #888;
+  --typeface-medium: #555;
+  --typeface-dark: #111111;
+
+  /* Font-family  */
+  --typeface-sans-serif: Arial, Helvetica, sans-serif;
+  --typeface-serif: Times, serif;
+  --typeface-monospace: 'Cousine', monospace;
+
+  /* Font-size  */
+  --font-size-7: 35px;
+  --font-size-6: 25px;
+  --font-size-5: 20px;
+  --font-size-4: 14px;
+  --font-size-3: 12px;
+  --font-size-2: 11px;
+  --font-size-1: 9px;
+
+  /* Background-color  */
+  --background-white: #ffffff;
+
+  /* Shadow */
+  --background-box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+
+  /* Gradient */
+  --blue-gradient: #0047ab;
+}

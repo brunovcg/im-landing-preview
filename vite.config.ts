@@ -20,6 +20,12 @@ export default defineConfig({
       pages: resolve(root, 'pages'),
       router: resolve(root, 'router'),
       locales: resolve(root, 'locales'),
+      configs: resolve(root, 'configs'),
+      layouts: resolve(root, 'layouts'),
+      utils: resolve(root, 'utils'),
+      styles: resolve(root, 'styles'),
+      types: resolve(root, 'types'),
+      assets: resolve(root, 'assets'),
     },
   },
   server: {

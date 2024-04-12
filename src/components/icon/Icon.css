@@ -1,0 +1,8 @@
+.im-icon {
+  display: flex;
+  align-items: center;
+
+  &.im-hide {
+    visibility: hidden;
+  }
+}

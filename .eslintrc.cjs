@@ -13,7 +13,7 @@ module.exports = {
     'prettier',
     'eslint-config-prettier',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['build', '.eslintrc.cjs'],
   settings: {
     'react': {
       version: 'detect',

@@ -1,5 +1,10 @@
 import { BoxProps } from './Box.types';
+import './Box.css';
 
-export default function Box({ children }: Readonly<BoxProps>) {
-  return <div>{children}</div>;
+export default function Box({ children, ...rest }: Readonly<BoxProps>) {
+  return (
+    <div className="im-box" {...rest}>
+      {children}
+    </div>
+  );
 }
