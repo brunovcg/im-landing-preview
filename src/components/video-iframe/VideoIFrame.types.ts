@@ -6,4 +6,5 @@ export type VideIFrameProps = {
   className?: string;
   width?: string;
   height?: string;
+  thumbnail?: string;
 };

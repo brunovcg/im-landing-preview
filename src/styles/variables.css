@@ -18,26 +18,38 @@
   --transparent: transparent;
 
   /* Font-size  */
-  --font-size-13: 56px;
-  --font-size-12: 52px;
-  --font-size-11: 48px;
-  --font-size-10: 44px;
-  --font-size-9: 40px;
-  --font-size-8: 36px;
-  --font-size-7: 32px;
-  --font-size-6: 28px;
-  --font-size-5: 24px;
-  --font-size-4: 20px;
-  --font-size-3: 16px;
+  --font-size-14: 48px;
+  --font-size-13: 45px;
+  --font-size-12: 42px;
+  --font-size-11: 39px;
+  --font-size-10: 36px;
+  --font-size-9: 33px;
+  --font-size-8: 30px;
+  --font-size-7: 27px;
+  --font-size-6: 24px;
+  --font-size-5: 21px;
+  --font-size-4: 18px;
+  --font-size-3: 15px;
   --font-size-2: 12px;
-  --font-size-1: 8px;
+  --font-size-1: 9px;
 
   /* Background-color  */
   --background-white: #ffffff;
+  --background-light: #fdfdfd;
+  --background-medium: #fafafa;
+  --background-grey: #d6d6d6;
+  --background-dark: #404040;
 
   /* Shadow */
   --background-box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 
   /* Gradient */
-  --blue-gradient: #0047ab;
+  --black-gradient: linear-gradient(90deg, rgba(60, 60, 60, 1) 0%, rgba(69, 69, 69, 1) 35%, rgba(87, 87, 87, 1) 100%);
+  --blue-gradient: linear-gradient(
+    90deg,
+    rgba(17, 117, 221, 1) 0%,
+    rgba(17, 110, 221, 1) 23%,
+    rgba(17, 138, 221, 1) 50%,
+    rgba(17, 162, 221, 1) 100%
+  );
 }

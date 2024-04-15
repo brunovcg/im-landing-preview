@@ -24,4 +24,3 @@ export type ButtonProps = HTMLProps<HTMLButtonElement> &
 
     size?: FontSize;
   };
-

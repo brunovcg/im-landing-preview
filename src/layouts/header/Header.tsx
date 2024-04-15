@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import LOGO from 'assets/images/logo.png';
 import './Header.css';
 import { useTranslation } from 'react-i18next';
@@ -6,35 +7,36 @@ import { ReactUtils } from 'utils';
 import { ButtonProps } from 'components/button/Button.types';
 import { Button } from 'components';
 import Configs from 'configs/Configs';
+import { HeaderProps } from './Header.types';
 
 const { EXTERNAL_LINKS } = Configs;
 
-export default function Header() {
+export default function Header({ appRef }: Readonly<HeaderProps>) {
   const { t } = useTranslation();
   const [isOnTop, setIsOnTop] = useState(true);
 
   const headerRef = useRef<HTMLHeadElement | null>(null);
 
   const menu: ButtonProps[] = [
-    { text: t('Layouts.Header.BetterData'), size: 4, styling: 'text' },
-    { text: t('Layouts.Header.Testimonials'), size: 4, styling: 'text' },
-    { text: t('Layouts.Header.MemberLogin'), size: 4, icon: 'login', href: EXTERNAL_LINKS.imLogin, targetBlank: true, styling: 'outlined' },
-    { text: t('Common.LearnMore'), size: 4, styling: 'regular', variant: 'error', icon: 'info' },
+    { text: t('Layouts.Header.BetterData'), size: 3, styling: 'text' },
+    { text: t('Layouts.Header.Testimonials'), size: 3, styling: 'text', href: '#im-testimonials' },
+    { text: t('Layouts.Header.MemberLogin'), size: 3, icon: 'login', href: EXTERNAL_LINKS.imLogin, styling: 'outlined' },
+    { text: t('Common.LearnMore'), size: 3, styling: 'regular', variant: 'error', icon: 'info' },
   ];
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY) {
+      if (appRef.current?.scrollTop) {
         setIsOnTop(false);
       } else {
         setIsOnTop(true);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    appRef.current?.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    return () => appRef.current?.removeEventListener('scroll', handleScroll);
+  }, [appRef]);
 
   const classes = ReactUtils.conditionalClass({
     ['im-header']: true,

@@ -15,9 +15,9 @@ export default function Home() {
     <div className="im-home">
       <Presentation />
       <FeaturedBy />
-      <Testimonials />
       <SecretWeapon />
       <LeadGeneration />
+      <Testimonials />
       <Community />
       <GetStarted />
       <WhatIsInvestorMachine />

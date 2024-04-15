@@ -2,11 +2,35 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 56.25%;
+
+  .im-thumbnail {
+    border: none;
+    background-color: var(--transparent);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .im-play-icon {
+      position: absolute;
+      background-color: var(--white-color);
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 5px;
+      bottom: 5px;
+    }
+  }
+
   iframe {
     overflow: hidden;
     border: 0;
     align-self: center;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
