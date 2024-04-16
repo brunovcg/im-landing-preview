@@ -13,6 +13,10 @@ export default function Presentation() {
         </h2>
         <h3 className="im-second-title">{t('Pages.Home.Presentation.AmericasFirst')}</h3>
         <p className="im-message">{t('Pages.Home.Presentation.DoneForYou')}</p>
+
+        <div className="im-title-investor-machine">
+          <h1>{t('Common.InvestorMachine')}</h1>
+        </div>
         <p className="im-description">{t('Pages.Home.Presentation.Description')}</p>
         <Button variant="error" icon="info" text={t('Common.LearnMore')} />
       </div>

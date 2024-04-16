@@ -6,7 +6,7 @@ export default abstract class ArrayUtils {
       result.push(i);
     }
 
-    return result;
+    return [...result];
   }
 
   static toMatrix<Position>(array: Array<Position>, max: number) {

@@ -1,4 +1,75 @@
 .im-get-started {
   width: 100%;
-  height: 400px;
+  min-height: 550px;
+  background: var(--blue-gradient);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+
+  h2 {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: var(--font-size-14);
+    background: var(--light-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .im-get-started-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    .im-get-started-card {
+      display: flex;
+      flex-direction: column;
+      width: 290px;
+      height: 280px;
+      max-width: 80%;
+      background-color: var(--background-light);
+      padding: 24px 20px;
+      border-radius: 16px;
+      gap: 20px;
+
+      &:hover {
+        scale: 1.198;
+        transition: scale 1s;
+        transform: perspective(1.048px) translateZ(0);
+      }
+
+      .im-get-started-card-header {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        .im-get-started-card-order {
+          min-width: 30px;
+          height: 30px;
+          border: 2px solid var(--error-color);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: var(--error-color);
+          color: var(--white-color);
+          font-weight: bold;
+        }
+
+        .im-get-started-card-title {
+          flex: 1;
+          color: var(--primary-dark-color);
+        }
+      }
+
+      .im-get-started-card-text {
+        line-height: 1.1;
+        font-size: var(--font-size-3);
+        color: var(--typeface-medium);
+      }
+    }
+  }
 }

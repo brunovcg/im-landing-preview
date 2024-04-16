@@ -18,9 +18,9 @@ import WINNING_MOVE_LOGO from 'assets/images/logo_winning.png';
 import PAVE_THE_WAY_LOGO from 'assets/images/logo_pave.png';
 import EAT_SLEEP_INVEST_LOGO from 'assets/images/logo_eat.png';
 import CEO_NATION_LOGO from 'assets/images/logo_ceo_nation.png';
-import useMeasure from 'react-use-measure';
 import { animate, useMotionValue, motion } from 'framer-motion';
 import { useEffect } from 'react';
+import { useElementSize } from 'hooks';
 
 export default function FeaturedBy() {
   const { t } = useTranslation();
@@ -63,13 +63,13 @@ export default function FeaturedBy() {
     { key: 36, src: CEO_NATION_LOGO, alt: 'the_ceo_nation_logo' },
   ];
 
-  const [ref, { width }] = useMeasure();
+  const { ref: elementSizeRef, width } = useElementSize();
 
   const xTranslation = useMotionValue(0);
 
   useEffect(() => {
     const gapSize = 24;
-    const gapNumber = 126;
+    const gapNumber = 117;
     const listRepetition = 2;
 
     const finalPosition = -width / listRepetition - gapSize * gapNumber;
@@ -90,7 +90,7 @@ export default function FeaturedBy() {
       <h2>{t('Pages.Home.FeaturedBy.Title')}</h2>
       <hr />
 
-      <motion.div ref={ref} style={{ x: xTranslation }} className="im-featured-by-logos">
+      <motion.div ref={elementSizeRef} style={{ x: xTranslation }} className="im-featured-by-logos">
         {logos.map((item) => (
           <img key={item.key} src={item.src} alt={item.alt} style={{ height: '60px' }} />
         ))}

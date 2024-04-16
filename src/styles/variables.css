@@ -1,7 +1,8 @@
 :root {
   /* Variant colors  */
   --primary-color: #11a2dd;
-  --primary-light-color: #6abdde;
+  --primary-dark-color: rgba(17, 117, 221, 1);
+  --primary-light-color: #dbf4fe;
   --error-color: #e12f26;
   --white-color: #fcfcfc;
   --grey-light-color: #888;
@@ -43,9 +44,13 @@
 
   /* Shadow */
   --background-box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+  --box-shadow: 3px 2px 10px 0px rgba(150, 150, 150, 0.4);
 
   /* Gradient */
+  --error-gradient: linear-gradient(90deg, rgba(225, 47, 38, 1) 0%, rgba(255, 109, 102, 1) 35%, rgba(252, 95, 87, 1) 100%);
+  --light-gradient: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(236, 250, 255, 1) 100%);
   --black-gradient: linear-gradient(90deg, rgba(60, 60, 60, 1) 0%, rgba(69, 69, 69, 1) 35%, rgba(87, 87, 87, 1) 100%);
+  --light-blue-gradient: linear-gradient(90deg, rgba(251, 251, 251, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(255, 255, 255, 1) 100%);
   --blue-gradient: linear-gradient(
     90deg,
     rgba(17, 117, 221, 1) 0%,

@@ -1,4 +1,126 @@
 .im-community {
   width: 100%;
-  height: 400px;
+  min-height: 500px;
+  padding: 80px 40px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+
+  .im-community-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    figure {
+      width: 600px;
+      background-color: white;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      img {
+        width: 500px;
+        max-width: 90%;
+      }
+    }
+  }
+
+  .im-community-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+      text-align: center;
+      font-size: var(--font-size-10);
+      background: var(--error-gradient);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding-bottom: 40px;
+    }
+
+    .im-community-description {
+      font-size: var(--font-size-5);
+      line-height: 1.25;
+      color: var(--typeface-medium);
+      margin-bottom: 20px;
+
+      .im-bold {
+        color: var(--error-color);
+        font-weight: bold;
+      }
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 20px;
+      justify-content: center;
+      justify-items: center;
+      margin-bottom: 40px;
+
+      .im-community-list-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        box-shadow: var(--box-shadow);
+        padding: 16px;
+        border-radius: 4px;
+        height: 150px;
+        img {
+          width: 25px;
+          height: 25px;
+          animation: rotate 5s infinite linear;
+        }
+
+        p {
+          color: var(--primary-color);
+          line-height: 1.2;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .im-community-right-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      .im-community-professional-only {
+        flex: 1;
+        background: var(--error-gradient);
+        padding: 20px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        h3 {
+          color: var(--white-color);
+          font-size: var(--font-size-9);
+        }
+
+        p {
+          color: var(--white-color);
+          font-size: var(--font-size-4);
+          font-weight: bold;
+        }
+      }
+
+      .im-community-apply {
+        flex: 1;
+        color: var(--white-color);
+        background: var(--blue-gradient);
+        font-size: var(--font-size-5);
+        padding: 20px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
 }

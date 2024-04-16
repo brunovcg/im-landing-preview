@@ -8,6 +8,7 @@
   .im-presentation-left {
     display: flex;
     flex-direction: column;
+    width: 50%;
 
     .im-title {
       font-size: var(--font-size-13);
@@ -28,7 +29,23 @@
       margin-bottom: 30px;
     }
 
+    .im-title-investor-machine {
+      width: 282px;
+      h1 {
+        font-size: var(--font-size-9);
+        color: var(--error-color);
+        overflow: hidden;
+        border-right: 0.1em solid var(--primary-color);
+        white-space: nowrap;
+        letter-spacing: 0.02em;
+        animation:
+          typing 3s steps(16, end),
+          blink-caret 1s step-end infinite;
+      }
+    }
+
     .im-description {
+      margin-top: 10px;
       color: var(--typeface-light);
       font-size: var(--font-size-3);
       line-height: 1.5;

@@ -1,6 +1,7 @@
-import { Warning, Info, SignIn, Play, ArrowCircleLeft, ArrowCircleRight, DotOutline } from '@phosphor-icons/react';
+import { Warning, Info, SignIn, Play, ArrowCircleLeft, ArrowCircleRight, DotOutline, CheckFat } from '@phosphor-icons/react';
 
 export const iconsMapping = {
+  apply: CheckFat,
   arrowLeft: ArrowCircleLeft,
   arrowRight: ArrowCircleRight,
   dot: DotOutline,

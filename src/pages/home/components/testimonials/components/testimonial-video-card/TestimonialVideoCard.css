@@ -1,0 +1,40 @@
+.im-testimonial-video-card {
+  height: 250px;
+  width: 280px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all ease 0.5s;
+
+  &:hover {
+    background-color: var(--background-medium);
+  }
+
+  &.im-shadowed {
+    box-shadow: var(--box-shadow);
+    background-color: var(--primary-light-color);
+
+    .im-testimonial-info {
+      .im-testimonial-customer {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .im-testimonial-info {
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+
+    .im-testimonial-customer {
+      color: var(--typeface-medium);
+      font-weight: bold;
+      font-size: var(--font-size-4);
+    }
+
+    .im-testimonial-company {
+      color: var(--typeface-light);
+      font-size: var(--font-size-2);
+    }
+  }
+}

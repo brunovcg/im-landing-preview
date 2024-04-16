@@ -26,6 +26,7 @@ export default defineConfig({
       styles: resolve(root, 'styles'),
       types: resolve(root, 'types'),
       assets: resolve(root, 'assets'),
+      hooks: resolve(root, 'hooks'),
     },
   },
   server: {

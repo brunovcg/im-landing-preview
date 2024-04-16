@@ -1,5 +1,7 @@
 export const enUS = {
   Common: {
+    ApplyHere: 'Apply Here',
+    InvestorMachine: 'Investor Machine',
     Loading: 'Loading',
     LearnMore: 'Learn More',
   },
@@ -20,6 +22,22 @@ export const enUS = {
   },
   Pages: {
     Home: {
+      Community: {
+        ApplyMessage: 'Think you`ve got what it takes? Apply and schedule a no-obligation call with our team to learn more.',
+        Description:
+          'Your Investor Machine fellow member community is <1/>. Our management team has created best-in-class, peer-to-peer communities that are life-changing for professional real estate investors, and Investor Machine is no different. Your future best friends and respected colleagues are waiting for you..',
+        DescriptionBold: 'made up of other hardworking and giving real estate entrepreneurs from across the country',
+        List: {
+          Item1: 'Monthly Member Only Training from Industry Leading Experts',
+          Item2: '24 X 7 Training Center to Keep You (and your team!) Sharp',
+          Item3: '2 Member Retreats and Conferences per Year',
+          Item4: '24 X 7 Private Member Only Online Community',
+        },
+        ProfessionalOnly: 'Professional Investors Only!',
+        ProfessionalOnlyText:
+          'The Investor Machine is not for new real estate investors with no recent experience. Experienced investors only!',
+        Title: 'Investor Machine Member Community',
+      },
       FeaturedBy: {
         Title: 'Featured By',
       },
@@ -46,12 +64,28 @@ export const enUS = {
         },
         Title: 'Frequently Asked Questions',
       },
+      GetStarted: {
+        Cards: {
+          StepTitle1: 'Apply - We`re Excited to Meet you!',
+          StepTitle2: 'Schedule A Call With Us',
+          StepTitle3: 'Commit',
+          StepTitle4: 'Get Started',
+          Step1:
+            'Take a few minutes to apply and tell us more about your experience and your goals. This will prepare us to learn more about who you are, and allow us to see if we might be a fit.',
+          Step2:
+            'As soon as you apply, you can schedule a no-obligation call with our team to see if you`re a fit (and if we`re a fit for you!). We`ll answer your questions, and get to know you better to see if the Investor Machine makes sense for you. We have limited availability for members in each market, so we`ll also let you know if your market is still available.',
+          Step3:
+            'If we invite you to join, and you`re excited about the opportunity, we`ll share how you can formally become a member of the Investor Machine family and quickly get started.',
+          Step4:
+            'As soon as you Commit, a flurry of activity will begin to get you integrated into our team as quickly as possible so you can benefit from your Investor Machine!',
+        },
+        Title: 'How to get Started?',
+      },
       Presentation: {
         AmericasFirst: 'America`s #1 Lead Generator:',
         BetterLead: 'Better Lead <1/> Generation.',
         DoneForYou: 'Done-For-You High Quality Lead Generation.',
-        Description:
-          'Investor Machine - Unrivaled Data, Artificial Intelligence (A.I.) and Machine Learning to Identify Motivated Sellers in YOUR Market!',
+        Description: 'Unrivaled Data, Artificial Intelligence (A.I.) and Machine Learning to Identify Motivated Sellers in YOUR Market!',
       },
       SecretWeapon: {
         Title: 'Secret Weapon',
