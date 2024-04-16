@@ -69,7 +69,7 @@ export default function FeaturedBy() {
 
   useEffect(() => {
     const gapSize = 24;
-    const gapNumber = 127.5;
+    const gapNumber = 126;
     const listRepetition = 2;
 
     const finalPosition = -width / listRepetition - gapSize * gapNumber;

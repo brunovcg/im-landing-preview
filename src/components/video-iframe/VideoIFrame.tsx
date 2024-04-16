@@ -38,7 +38,6 @@ export default function VideoIFrame({
     );
 
     if (!thumbnail) {
-      console.log(1);
       return (
         <>
           {frame}
@@ -52,7 +51,6 @@ export default function VideoIFrame({
     }
 
     if (clicked) {
-      console.log(2);
       return frame;
     }
 
@@ -63,7 +61,7 @@ export default function VideoIFrame({
     <div style={{ width, height }} className={classes}>
       {!!thumbnail && !clicked && (
         <button className="im-thumbnail" style={{ width, height }} onClick={() => setClicked(true)}>
-          <img src={thumbnail} alt={title} style={{ width, height }} />
+          <img src={thumbnail} alt={title} style={{ maxWidth: '100%', height }} />
           <div className="im-play-icon">
             <Icon icon="play" variant="error" weight="fill" size={5} />
           </div>

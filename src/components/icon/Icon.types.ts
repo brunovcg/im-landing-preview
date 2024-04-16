@@ -8,20 +8,16 @@ export const iconWeight = ['duotone', 'regular', 'bold', 'thin', 'fill'] as cons
 
 export type IconWeight = (typeof iconWeight)[number];
 
-type ConditionalStyledIconProps = { size?: FontSize; customSize?: never } | { size?: never; customSize?: string };
-
-export type IconProps = ConditionalStyledIconProps & {
+export type IconProps = {
   icon: IconName;
   variant?: ColorsVariant;
   className?: string;
-  notifications?: number;
+  size?: FontSize;
   weight?: IconWeight;
   mirrored?: boolean;
   title?: string;
   hide?: boolean;
   margin?: string;
-  hoverColor?: ColorsVariant;
   dataTestId?: string;
   disabled?: boolean;
-  error?: boolean;
 } & Omit<HTMLProps<HTMLSpanElement>, 'size'>;

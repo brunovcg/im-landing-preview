@@ -1,0 +1,18 @@
+.im-button-icon {
+  border: none;
+  background-color: var(--transparent-color);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+
+  &[hidden] {
+    visibility: hidden;
+  }
+
+  &:hover {
+    background-color: var(--background-medium);
+  }
+}
