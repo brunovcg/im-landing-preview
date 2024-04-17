@@ -19,10 +19,10 @@ export type DropdownMenuProps = {
   options: DropdownOptions;
   closeOnClickOutside?: boolean;
   closeOnSelect?: boolean;
-  skidding?: number;
   icon?: IconName;
   title?: string;
   disabled?: boolean;
-  width?: string;
-  listHeight?: string;
+  width: number;
+  height?: number;
+  position?: 'center' | 'start' | 'end';
 };

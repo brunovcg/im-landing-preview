@@ -69,14 +69,14 @@ export default function FeaturedBy() {
 
   useEffect(() => {
     const gapSize = 24;
-    const gapNumber = 117;
+    const gapNumber = 118;
     const listRepetition = 2;
 
     const finalPosition = -width / listRepetition - gapSize * gapNumber;
 
     const controls = animate(xTranslation, [0, finalPosition], {
       ease: 'linear',
-      duration: 20,
+      duration: 60,
       repeat: Infinity,
       repeatType: 'loop',
       repeatDelay: 0,

@@ -1,52 +1,43 @@
-import './DropdownMenu.css';
 import { DropdownMenuProps } from './DropdownMenu.types';
 import { useOutsideClick, useKeyPress, usePosition } from 'hooks';
 import { Ref, useRef, useState } from 'react';
-import { Icon, ButtonIcon } from 'components';
-import { ReactUtils, ArrayUtils, DOMUtils } from 'utils';
+import { ButtonIcon, Portal } from 'components';
+import { ReactUtils, DOMUtils } from 'utils';
+import DropdownMenuContent from './components/DropdownMenuContent';
 
 export default function DropdownMenu({
   options,
   width,
   closeOnClickOutside = true,
   closeOnSelect = true,
-  skidding,
   icon,
   title,
   disabled,
-  listHeight,
+  height,
+  position = 'center',
 }: Readonly<DropdownMenuProps>) {
   const [displayMenu, setDisplayMenu] = useState(false);
   const dropdownContentRef = useRef<HTMLDivElement>(null);
+
+  const setSkidding = () => {
+    const paddingInline = 16;
+
+    if (position === 'center') {
+      return 0;
+    }
+    if (position === 'end') return (width / 2 - paddingInline) * -1;
+    return width / 2 - paddingInline;
+  };
+
   const { styles, attributes, setReferenceElement, setPopperElement } = usePosition({
-    distance: 5,
+    distance: 8,
     position: 'absolute',
-    skidding: skidding ?? -70,
+    skidding: setSkidding(),
   });
 
   useOutsideClick(dropdownContentRef, () => setDisplayMenu(false), closeOnClickOutside);
 
-  const handleOptionClick = (click?: () => void) => {
-    click?.();
-    if (closeOnSelect) {
-      setDisplayMenu(false);
-    }
-  };
-
   const dropdownClasses = ReactUtils.conditionalClass({ ['im-dropdown-menu']: true, ['im-dropdown-disabled']: !!disabled });
-
-  const optionClasses = (selected: boolean, disabledOption: boolean) =>
-    ReactUtils.conditionalClass({
-      ['im-dropdown-menu-option']: true,
-      ['im-disabled']: disabledOption,
-      ['im-selected']: selected,
-    });
-
-  const contentClasses = ReactUtils.conditionalClass({
-    ['im-dropdown-menu-content']: true,
-    ['im-opened']: displayMenu,
-    ['im-closed']: !displayMenu,
-  });
 
   useKeyPress({
     keys: ['Escape'],
@@ -76,7 +67,7 @@ export default function DropdownMenu({
   };
 
   return (
-    <div ref={dropdownContentRef} style={{ width }} className={dropdownClasses}>
+    <div ref={dropdownContentRef} className={dropdownClasses}>
       <div className="im-dropdown-menu-wrapper" ref={setReferenceElement as Ref<HTMLDivElement>}>
         <ButtonIcon
           disabled={disabled}
@@ -96,37 +87,23 @@ export default function DropdownMenu({
           }
         />
 
-        {
-          <div
-            className={contentClasses}
-            ref={setPopperElement as Ref<HTMLDivElement>}
-            style={{ ...styles.popper, width, height: !displayMenu ? 0 : listHeight }}
-            {...attributes.popper}
-          >
-            {title && <div className="im-dropdown-menu-title">{title}</div>}
-            {ArrayUtils.filterMap(
-              options,
-              (opt) => !opt.hide,
-              (option) => (
-                <button
-                  className={optionClasses(!!option.selected, !!option.disabled)}
-                  disabled={option.disabled}
-                  key={option.text}
-                  style={{ color: `var(--${option.textVariant ?? 'primary'}-color)` }}
-                  title={option.title}
-                  onClick={() => {
-                    if (!option.disabled) {
-                      handleOptionClick(option.onClick);
-                    }
-                  }}
-                >
-                  <div className="im-dropdown-menu-icon">{option.icon && <Icon icon={option.icon} disabled={option.disabled} />}</div>
-                  <div className="im-dropdown-menu-text">{option.text}</div>
-                </button>
-              )
-            )}
-          </div>
-        }
+        <Portal
+          targetId="popper"
+          element={
+            <DropdownMenuContent
+              title={title}
+              options={options}
+              displayMenu={displayMenu}
+              setPopperElement={setPopperElement}
+              styles={styles}
+              width={width}
+              attributes={attributes}
+              height={height}
+              closeOnSelect={closeOnSelect}
+              setDisplayMenu={setDisplayMenu}
+            />
+          }
+        />
       </div>
     </div>
   );

@@ -5,10 +5,9 @@ import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState } from 'react';
 import { ReactUtils } from 'utils';
 import { ButtonProps } from 'components/button/Button.types';
-import { Button } from 'components';
+import { Button, DropdownMenu } from 'components';
 import Configs from 'configs/Configs';
 import { HeaderProps } from './Header.types';
-import DropdownMenu from 'components/dropdown-menu/DropdownMenu';
 import { DropdownOptions } from 'components/dropdown-menu/DropdownMenu.types';
 
 const { EXTERNAL_LINKS } = Configs;
@@ -62,7 +61,7 @@ export default function Header({ appRef }: Readonly<HeaderProps>) {
     <header className={classes} ref={headerRef}>
       <img src={LOGO} alt="logo-investor-machine" height="40px" className="im-header-logo" />
       <div className="im-mobile-menu">
-        <DropdownMenu options={dropdownOptions} skidding={-20} listHeight="127px" />
+        <DropdownMenu options={dropdownOptions} height={130} width={180} position="end" />
         <Button text={t('Common.LearnMore')} size={2} variant="error" icon="info" />
       </div>
 

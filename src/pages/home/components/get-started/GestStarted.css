@@ -29,7 +29,7 @@
       flex-direction: column;
       width: 290px;
       height: 280px;
-      max-width: 80%;
+      max-width: 100%;
       background-color: var(--background-light);
       padding: 24px 20px;
       border-radius: 16px;

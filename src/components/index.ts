@@ -6,3 +6,5 @@ export { default as Icon } from './icon/Icon';
 export { default as Wrapper } from './wrapper/Wrapper';
 export { default as Button } from './button/Button';
 export { default as ButtonIcon } from './button-icon/ButtonIcon';
+export { default as Portal } from './portal/Portal';
+export { default as DropdownMenu } from './dropdown-menu/DropdownMenu';
