@@ -13,21 +13,22 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 60px;
+    text-align: center;
   }
 
   .im-testimonials-videos-container {
     display: flex;
-    gap: 16px;
+    gap: 8px;
     align-items: center;
     width: 100%;
-    padding-inline: 10px;
+    padding-inline: 4px;
     height: 100%;
     margin-bottom: 10px;
     .im-testimonials-videos {
       display: flex;
       flex: 1;
       gap: 20px;
-      padding-inline: 20px;
+
       justify-content: center;
       height: 250px;
       max-width: 100%;
@@ -36,5 +37,11 @@
 
   .im-pages-icons {
     display: flex;
+  }
+
+  @media (max-width: 720px) {
+    .im-pages-icons {
+      display: none;
+    }
   }
 }

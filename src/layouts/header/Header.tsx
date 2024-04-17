@@ -8,6 +8,8 @@ import { ButtonProps } from 'components/button/Button.types';
 import { Button } from 'components';
 import Configs from 'configs/Configs';
 import { HeaderProps } from './Header.types';
+import DropdownMenu from 'components/dropdown-menu/DropdownMenu';
+import { DropdownOptions } from 'components/dropdown-menu/DropdownMenu.types';
 
 const { EXTERNAL_LINKS } = Configs;
 
@@ -43,9 +45,27 @@ export default function Header({ appRef }: Readonly<HeaderProps>) {
     ['im-scrolled']: !isOnTop,
   });
 
+  const dropdownOptions: DropdownOptions = [
+    {
+      text: t('Layouts.Header.BetterData'),
+    },
+    {
+      text: t('Layouts.Header.Testimonials'),
+    },
+    {
+      text: t('Layouts.Header.MemberLogin'),
+      icon: 'login',
+    },
+  ];
+
   return (
     <header className={classes} ref={headerRef}>
       <img src={LOGO} alt="logo-investor-machine" height="40px" className="im-header-logo" />
+      <div className="im-mobile-menu">
+        <DropdownMenu options={dropdownOptions} skidding={-20} listHeight="127px" />
+        <Button text={t('Common.LearnMore')} size={2} variant="error" icon="info" />
+      </div>
+
       <nav className="im-header-nav">
         <ul className="im-header-nav-list">
           {menu.map((item) => (

@@ -12,12 +12,6 @@ export default function Community() {
   return (
     <section className="im-community">
       <div className="im-community-left">
-        <figure>
-          <img src={NETWORKING} alt="network" />
-        </figure>
-      </div>
-
-      <div className="im-community-right">
         <h2>{t('Pages.Home.Community.Title')}</h2>
         <p className="im-community-description">
           <Trans
@@ -33,6 +27,11 @@ export default function Community() {
             </li>
           ))}
         </ul>
+      </div>
+      <div className="im-community-right">
+        <figure>
+          <img src={NETWORKING} alt="network" />
+        </figure>
         <div className="im-community-right-bottom">
           <div className="im-community-professional-only">
             <h3>{t('Pages.Home.Community.ProfessionalOnly')}</h3>

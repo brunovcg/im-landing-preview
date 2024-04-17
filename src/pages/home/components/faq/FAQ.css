@@ -22,7 +22,8 @@
   article {
     display: grid;
     gap: 40px 90px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 500px));
+    justify-content: center;
 
     .im-question-group {
       display: flex;

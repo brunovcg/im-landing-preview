@@ -5,16 +5,21 @@
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   padding: 50px;
 
+  @media (max-width: 720px) {
+    padding: 30px;
+  }
+
   .im-presentation-left {
     display: flex;
     flex-direction: column;
     width: 50%;
 
     .im-title {
-      font-size: var(--font-size-13);
+      font-size: var(--font-size-15);
       font-family: var(--typeface-sans-serif);
       color: var(--primary-color);
       margin-bottom: 30px;
+      min-width: 300px;
     }
 
     .im-second-title {
@@ -30,7 +35,7 @@
     }
 
     .im-title-investor-machine {
-      width: 282px;
+      width: 225px;
       h1 {
         font-size: var(--font-size-9);
         color: var(--error-color);

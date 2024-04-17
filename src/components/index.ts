@@ -5,3 +5,4 @@ export { default as LoadingSpinner } from './loading-spinner/LoadingSpinner';
 export { default as Icon } from './icon/Icon';
 export { default as Wrapper } from './wrapper/Wrapper';
 export { default as Button } from './button/Button';
+export { default as ButtonIcon } from './button-icon/ButtonIcon';

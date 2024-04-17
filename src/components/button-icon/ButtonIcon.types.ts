@@ -8,4 +8,7 @@ export type ButtonIconProps = Omit<HTMLProps<HTMLButtonElement>, 'type'> & {
   weight?: IconWeight;
   mirrored?: boolean;
   size?: FontSize;
+  stopPropagation?: boolean;
+  preventDefault?: boolean;
+  applyBorder?: boolean;
 };

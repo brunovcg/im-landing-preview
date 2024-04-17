@@ -6,6 +6,7 @@
   --error-color: #e12f26;
   --white-color: #fcfcfc;
   --grey-light-color: #888;
+  --disabled-color: #cccccc;
 
   /* Typeface colors  */
   --typeface-light: #888;
@@ -20,20 +21,21 @@
   --transparent: transparent;
 
   /* Font-size  */
-  --font-size-14: 48px;
-  --font-size-13: 45px;
-  --font-size-12: 42px;
-  --font-size-11: 39px;
-  --font-size-10: 36px;
-  --font-size-9: 33px;
-  --font-size-8: 30px;
-  --font-size-7: 27px;
-  --font-size-6: 24px;
-  --font-size-5: 21px;
-  --font-size-4: 18px;
-  --font-size-3: 15px;
+  --font-size-15: 38px;
+  --font-size-14: 36px;
+  --font-size-13: 34px;
+  --font-size-12: 32px;
+  --font-size-11: 30px;
+  --font-size-10: 28px;
+  --font-size-9: 26px;
+  --font-size-8: 24px;
+  --font-size-7: 22px;
+  --font-size-6: 20px;
+  --font-size-5: 18px;
+  --font-size-4: 16px;
+  --font-size-3: 14px;
   --font-size-2: 12px;
-  --font-size-1: 9px;
+  --font-size-1: 10px;
 
   /* Background-color  */
   --background-white: #ffffff;

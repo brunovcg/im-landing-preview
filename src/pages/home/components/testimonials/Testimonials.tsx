@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import './Testimonials.css';
 import Configs from 'configs/Configs';
-import ButtonIcon from 'components/button-icon/ButtonIcon';
+import { ButtonIcon } from 'components';
 import { useMemo, useState } from 'react';
 import { ArrayUtils } from 'utils';
 import { useElementSize } from 'hooks';
@@ -16,7 +16,7 @@ export default function Testimonials() {
 
   const { ref: elementSizeRef, width } = useElementSize();
 
-  const cardPlusGapWidth = 320;
+  const cardPlusGapWidth = 280;
 
   const list = useMemo(() => {
     const maxCount = Math.trunc(width / cardPlusGapWidth);

@@ -25,4 +25,20 @@ export default abstract class ArrayUtils {
     }
     return result;
   }
+
+  static filterMap<ArrayType extends unknown[], MapReturn>(
+    arr: ArrayType | undefined,
+    filterFn: (filterItem: ArrayType[number], ...rest: unknown[]) => boolean,
+    mapFn: (mapItem: ArrayType[number], index?: number, array?: ArrayType, ...rest: unknown[]) => MapReturn
+  ) {
+    if (!Array.isArray(arr)) {
+      return [];
+    }
+    const isFunction = (fn: (funcItem: ArrayType) => unknown) => typeof fn === 'function';
+    return arr.reduce((acc, current, index) => {
+      if (isFunction(filterFn) && filterFn(current) === false) return acc;
+      const newItem = isFunction(mapFn) ? mapFn(current, index, arr as ArrayType) : current;
+      return [...(acc as unknown[]), newItem];
+    }, []) as MapReturn[];
+  }
 }

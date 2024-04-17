@@ -53,7 +53,7 @@ export default function Button({
       style={{ fontSize: `var(--font-size-${size})`, ...handleButtonStyled() }}
       {...rest}
     >
-      {icon && <Icon icon={icon} variant={styling === 'regular' ? 'white' : variant} size={(size + 1) as FontSize} weight="bold" />}
+      {icon && <Icon icon={icon} variant={styling === 'regular' ? 'white' : variant} size={(size + 3) as FontSize} weight="bold" />}
       {href && (
         <a {...anchorProps} style={{ color: handleButtonStyled().color }}>
           {text}

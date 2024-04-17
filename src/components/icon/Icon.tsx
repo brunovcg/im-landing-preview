@@ -14,7 +14,7 @@ export default function Icon({ icon, size = 10, variant, className = '', mirrore
 
   const props = {
     weight,
-    size: 9 + 3 * (size - 1),
+    size: 10 + 2 * (size - 1),
     mirrored,
     color: variant ? `var(--${variant}-color)` : undefined,
   };
