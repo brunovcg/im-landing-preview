@@ -1,4 +1,129 @@
 .im-what-is-investor-machine {
   width: 100%;
-  height: 400px;
+  min-height: 400px;
+  padding: 40px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 50px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+  .im-what-is-investor-machine-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      padding: 10px;
+      font-size: var(--font-size-8);
+
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      &.im-is-title {
+        background: var(--green-gradient);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &.im-not-title {
+        margin-top: 20px;
+        background: var(--error-gradient);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .im-what-is-investor-machine-cards {
+      display: grid;
+      gap: 15px 30px;
+      flex-wrap: wrap;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      justify-items: center;
+
+      .im-is-investor-machine-card,
+      .im-not-investor-machine-card {
+        line-height: 1.5;
+        border-radius: 6px;
+        display: flex;
+        font-size: var(--font-size-3);
+        justify-content: center;
+        align-items: flex-start;
+        padding: 12px;
+        color: var(--typeface-medium);
+        gap: 10px;
+      }
+    }
+  }
+
+  .im-what-is-investor-machine-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+
+    .im-secret-weapon {
+      max-width: 600px;
+      line-height: 1.5;
+      color: var(--typeface-medium);
+    }
+
+    .im-goals {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      height: 90px;
+
+      .im-goals-title {
+        color: var(--typeface-dark);
+        margin-top: 10px;
+      }
+
+      .im-curly-bracket {
+        font-size: 60px;
+      }
+
+      span {
+        color: var(--typeface-dark);
+      }
+      ul {
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        color: var(--typeface-medium);
+
+        li {
+          display: flex;
+          gap: 16px;
+          align-items: center;
+        }
+      }
+    }
+
+    .im-availability {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      box-shadow: var(--box-shadow);
+      border-radius: 5px;
+      padding: 30px;
+      max-width: 600px;
+
+      .im-availability-title {
+        font-size: var(--font-size-8);
+        color: var(--primary-color);
+      }
+
+      .im-availability-text {
+        line-height: 1.5;
+        color: var(--typeface-light);
+        font-size: var(--font-size-5);
+      }
+    }
+  }
 }

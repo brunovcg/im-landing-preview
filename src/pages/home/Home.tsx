@@ -3,7 +3,6 @@ import Footer from 'layouts/footer/Footer';
 import FeaturedBy from './components/featured-by/FeaturedBy';
 import Presentation from './components/presentation/Presentation';
 import FAQ from './components/faq/FAQ';
-import SecretWeapon from './components/secret-weapon/SecretWeapon';
 import WhatIsInvestorMachine from './components/what-is-investor-machine/WhatIsInvestorMachine';
 import Testimonials from './components/testimonials/Testimonials';
 import Community from './components/community/Community';
@@ -15,7 +14,6 @@ export default function Home() {
     <div className="im-home">
       <Presentation />
       <FeaturedBy />
-      <SecretWeapon />
       <LeadGeneration />
       <Testimonials />
       <Community />

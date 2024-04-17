@@ -1,4 +1,4 @@
-import { Trans, useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import './Community.css';
 import NETWORKING from 'assets/images/networking.png';
 import RED_GEAR from 'assets/images/red_gear.png';
@@ -13,12 +13,7 @@ export default function Community() {
     <section className="im-community">
       <div className="im-community-left">
         <h2>{t('Pages.Home.Community.Title')}</h2>
-        <p className="im-community-description">
-          <Trans
-            i18nKey={'Pages.Home.Community.Description'}
-            components={{ 1: <span className="im-bold">{t('Pages.Home.Community.DescriptionBold')}</span> }}
-          />
-        </p>
+        <p className="im-community-description">{t('Pages.Home.Community.Description')}</p>
         <ul>
           {listItems.map((item) => (
             <li key={item} className="im-community-list-item">

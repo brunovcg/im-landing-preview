@@ -25,8 +25,7 @@ export const enUS = {
       Community: {
         ApplyMessage: 'Think you`ve got what it takes? Apply and schedule a no-obligation call with our team to learn more.',
         Description:
-          'Your Investor Machine fellow member community is <1/>. Our management team has created best-in-class, peer-to-peer communities that are life-changing for professional real estate investors, and Investor Machine is no different. Your future best friends and respected colleagues are waiting for you..',
-        DescriptionBold: 'made up of other hardworking and giving real estate entrepreneurs from across the country',
+          'Made up of other hardworking and giving real estate entrepreneurs from across the country. Our management team has created best-in-class, peer-to-peer communities that are life-changing for professional real estate investors, and Investor Machine is no different. Your future best friends and respected colleagues are waiting for you..',
         List: {
           Item1: 'Monthly Member Only Training from Industry Leading Experts',
           Item2: '24 X 7 Training Center to Keep You (and your team!) Sharp',
@@ -81,6 +80,27 @@ export const enUS = {
         },
         Title: 'How to get Started?',
       },
+      LeadGeneration: {
+        List: {
+          Item1Title: 'Data',
+          Item2Title: 'Direct Mail',
+          Item3Title: 'Outbound Calling & SMS Marketing (Optional)',
+          Item4TItle: 'World Class "White Glove" Support',
+          Item1:
+            'We have created a sophisticated and proprietary data analysis system to identify seller motivation. We analyze millions of data points in your market on a monthly basis to create a Customized Marketing Plan just for YOU!',
+          Item2:
+            'We execute your direct mail marketing with military precision...we order your mail for you, so inconsistent lead flow will become a thing of the past. ',
+          Item3:
+            'We provide you with current phone data for the most motivated sellers in your market, so your marketing plan has a 1-2 PUNCH when you connect direct mail marketing, cold calling and SMS Marketing.  We also give guidance on the very best tools to use to stay compliant and maximize your performance.',
+          Item4:
+            'Think of us as your "Strategic Marketing Partner"! As a customer, you`ll be assigned to a private Account Manager that is here to review your data, account, and help continually improve your results.',
+        },
+        Message1:
+          'Lets be honest...all leads are not equal. Our proprietary "machine", systems and processes provides a more robust lead generation solution than you`ve likely ever seen before..',
+        Message2:
+          'You see...our leadership team has done THOUSANDS of deals...and spent MILLIONS of our OWN Dollars on advertising....we know YOUR pain!',
+        Title: 'Lead Generation',
+      },
       Presentation: {
         AmericasFirst: 'America`s #1 Lead Generator:',
         BetterLead: 'Better Lead <1/> Generation.',
@@ -92,6 +112,29 @@ export const enUS = {
       },
       Testimonials: {
         Title: 'Trusted by many Customers',
+      },
+      WhatIsInvestorMachine: {
+        Availability:
+          'We limit the number of members per market in the Investor Machine, so we don`t oversaturate our advertising. Some markets are already closed. Apply now to see if your market is still available.',
+        AvailabilityTitle: 'Is Your Market Still Available?',
+        Goal: 'We Have Two Goals:',
+        GoalList: {
+          Goal1: 'Help YOU Do More Profitable Deals',
+          Goal2: 'Make Your Life Easier! ',
+        },
+        IsList1: 'The most advanced lead generation system for real estate investors + member community in America',
+        IsList2:
+          'Only for professional real estate investors actively focused on building their businesses and building better lives for themselves and their families',
+        IsList3:
+          'Built and operated by investors that have been involved in thousands of transactions and understand your needs better than perhaps anyone else.',
+        IsNotList1: 'Not for investors spending less than $5,000 per month on lead generation.',
+        IsNotList2: 'Not a coaching program, although the knowledge sharing and lessons learned are priceless.',
+        IsNotList3:
+          'Not for those that don`t want to be part of a learning and sharing community of professionals, or those that are selfish.',
+        SecretWeapon:
+          'Investor Machine is a powerful DATA DRIVEN, CUTTING EDGE, DONE-FOR-YOU Lead Generation System and our "Machine" tells you EXACTLY who to market to, how frequently...then we actually DO THE WORK for you!',
+        TitleIs: 'What Investor Machine is?',
+        TitleNot: 'and is not...',
       },
     },
   },
