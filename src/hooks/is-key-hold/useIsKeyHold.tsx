@@ -30,4 +30,3 @@ export default function useIsHoldingKey(key?: EventKey) {
 
   return isHolding;
 }
-

@@ -6,4 +6,3 @@ export type UsePositionProps = {
   distance?: number;
   skidding?: number;
 };
-

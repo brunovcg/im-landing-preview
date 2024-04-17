@@ -24,4 +24,3 @@ export default function usePosition({ side, position = 'fixed', skidding = 0, di
 
   return { setReferenceElement, setPopperElement, styles, attributes };
 }
-

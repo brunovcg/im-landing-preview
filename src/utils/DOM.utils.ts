@@ -3,4 +3,3 @@ export default abstract class DOMUtils {
     return document.activeElement;
   }
 }
-
