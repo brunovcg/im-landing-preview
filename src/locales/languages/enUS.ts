@@ -82,10 +82,10 @@ export const enUS = {
       },
       LeadGeneration: {
         List: {
-          Item1Title: 'Data',
-          Item2Title: 'Direct Mail',
-          Item3Title: 'Outbound Calling & SMS Marketing (Optional)',
-          Item4TItle: 'World Class "White Glove" Support',
+          ItemTitle1: 'Data',
+          ItemTitle2: 'Direct Mail',
+          ItemTitle3: 'Outbound Calling & SMS Marketing (Optional)',
+          ItemTitle4: 'World Class "White Glove" Support',
           Item1:
             'We have created a sophisticated and proprietary data analysis system to identify seller motivation. We analyze millions of data points in your market on a monthly basis to create a Customized Marketing Plan just for YOU!',
           Item2:
@@ -97,8 +97,8 @@ export const enUS = {
         },
         Message1:
           'Lets be honest...all leads are not equal. Our proprietary "machine", systems and processes provides a more robust lead generation solution than you`ve likely ever seen before..',
-        Message2:
-          'You see...our leadership team has done THOUSANDS of deals...and spent MILLIONS of our OWN Dollars on advertising....we know YOUR pain!',
+        Message2: 'You see...our leadership team <1/> on advertising.... we know YOUR pain!',
+        Message2Underlined: 'has done THOUSANDS of deals... and spent MILLIONS of our OWN Dollars',
         Title: 'Lead Generation',
       },
       Presentation: {

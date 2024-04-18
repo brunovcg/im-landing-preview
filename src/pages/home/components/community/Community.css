@@ -10,6 +10,7 @@
 
   @media (max-width: 1000px) {
     flex-direction: column;
+    padding-inline: 20px;
   }
 
   .im-community-left {

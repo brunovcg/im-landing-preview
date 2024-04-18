@@ -31,6 +31,7 @@ export default function WhatIsInvestorMachine() {
       </div>
 
       <div className="im-what-is-investor-machine-right">
+        <p className="im-secret-weapon">{t('Pages.Home.WhatIsInvestorMachine.SecretWeapon')}</p>
         <div className="im-goals">
           <h3 className="im-goals-title">{t('Pages.Home.WhatIsInvestorMachine.Goal')}</h3>
           <span className="im-curly-bracket">{'{'}</span>
@@ -43,7 +44,7 @@ export default function WhatIsInvestorMachine() {
             ))}
           </ul>
         </div>
-        <p className="im-secret-weapon">{t('Pages.Home.WhatIsInvestorMachine.SecretWeapon')}</p>
+
         <div className="im-availability">
           <h3 className="im-availability-title">{t('Pages.Home.WhatIsInvestorMachine.AvailabilityTitle')}</h3>
           <p className="im-availability-text">{t('Pages.Home.WhatIsInvestorMachine.Availability')}</p>

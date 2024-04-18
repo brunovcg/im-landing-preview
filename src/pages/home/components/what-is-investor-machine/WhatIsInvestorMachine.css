@@ -8,6 +8,11 @@
   margin-top: 40px;
   margin-bottom: 20px;
 
+  @media (max-width: 1000px) {
+    margin-top: 20px;
+    padding-inline: 20px;
+  }
+
   .im-what-is-investor-machine-left {
     flex: 1;
     display: flex;
@@ -75,7 +80,7 @@
       display: flex;
       align-items: center;
       gap: 30px;
-      height: 90px;
+      height: 120px;
 
       .im-goals-title {
         color: var(--typeface-dark);
@@ -110,16 +115,24 @@
       align-items: center;
       gap: 30px;
       box-shadow: var(--box-shadow);
-      border-radius: 5px;
-      padding: 30px;
+      border-radius: 8px;
       max-width: 600px;
+      padding-bottom: 30px;
 
       .im-availability-title {
+        border-radius: 8px 8px 0 0;
         font-size: var(--font-size-8);
-        color: var(--primary-color);
+        background: var(--blue-gradient);
+        color: var(--white-color);
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .im-availability-text {
+        padding: 0 30px;
         line-height: 1.5;
         color: var(--typeface-light);
         font-size: var(--font-size-5);
