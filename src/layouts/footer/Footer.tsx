@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="im-footer">
       <p className="im-footer-line">{t('Layouts.Footer.Line1')}</p>
       <p className="im-footer-line">{t('Layouts.Footer.Line2')}</p>
-      <Button text={t('Layouts.Footer.TermsAndConditions')} size={2} styling="text" />
+      <Button text={t('Layouts.Footer.TermsAndConditions')} size="small" styling="text" />
     </footer>
   );
 }

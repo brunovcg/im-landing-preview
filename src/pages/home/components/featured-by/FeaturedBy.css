@@ -10,12 +10,14 @@
   h2 {
     width: 100%;
     text-align: center;
-    color: var(--white-color);
-    font-size: var(--font-size-12);
+    background: var(--light-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 2px;
+    font-size: var(--font-size-huge);
   }
 
   hr {
-    margin-top: 15px;
     width: 120px;
     border-top: 1px solid var(--white-color);
     border-bottom: none;

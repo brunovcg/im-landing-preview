@@ -2,6 +2,7 @@ import { Icon } from 'components';
 import { ButtonIconProps } from './ButtonIcon.types';
 import './ButtonIcon.css';
 import { MouseEvent } from 'react';
+import { ReactUtils } from 'utils';
 
 export default function ButtonIcon({
   icon,
@@ -10,6 +11,7 @@ export default function ButtonIcon({
   mirrored,
   variant,
   onClick,
+  className,
   applyBorder,
   stopPropagation,
   preventDefault,
@@ -26,13 +28,10 @@ export default function ButtonIcon({
     onClick?.(e);
   };
 
+  const classes = ReactUtils.conditionalClass({ ['im-button-icon']: true, [`${className}`]: !!className });
+
   return (
-    <button
-      className="im-button-icon"
-      type="button"
-      {...rest}
-      style={{ border: applyBorder ? `1px solid var(--${variant}-color)` : undefined }}
-    >
+    <button className={classes} type="button" {...rest} style={{ border: applyBorder ? `1px solid var(--${variant}-color)` : undefined }}>
       <Icon icon={icon} size={size} weight={weight} mirrored={mirrored} variant={variant} onClick={handleClick} />
     </button>
   );

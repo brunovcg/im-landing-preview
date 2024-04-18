@@ -19,7 +19,7 @@ export default function useElementSize<GenericElement extends HTMLElement = HTML
 
       return () => observer.disconnect();
     }
-  }, [ref?.current?.offsetWidth, ref?.current?.offsetHeight]);
+  }, []);
 
   return { ref, ...elementSize };
 }

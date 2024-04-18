@@ -40,7 +40,7 @@ function VideoVimeo(
         >
           <img src={thumbnail} alt={`vimeo-${id}`} style={{ maxWidth: '100%', height }} />
           <div className="im-play-icon">
-            <Icon icon="play" variant="error" weight="fill" size={5} />
+            <Icon icon="play" variant="error" weight="fill" size="regular" />
           </div>
         </button>
       )}

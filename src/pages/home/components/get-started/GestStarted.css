@@ -11,7 +11,6 @@
     padding-top: 50px;
     padding-bottom: 40px;
     text-align: center;
-    font-size: var(--font-size-16);
     background: var(--light-gradient);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -28,7 +27,7 @@
       display: flex;
       flex-direction: column;
       width: 290px;
-      height: 280px;
+      height: 300px;
       max-width: 100%;
       background-color: var(--background-light);
       padding: 24px 20px;
@@ -67,7 +66,6 @@
 
       .im-get-started-card-text {
         line-height: 1.1;
-        font-size: var(--font-size-3);
         color: var(--typeface-medium);
       }
     }

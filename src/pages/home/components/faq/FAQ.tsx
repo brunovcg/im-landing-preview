@@ -8,12 +8,12 @@ export default function FAQ() {
 
   return (
     <section className="im-faq">
-      <h2>{t('Pages.Home.FAQ.Title')}</h2>
+      <h3>{t('Pages.Home.FAQ.Title')}</h3>
       <hr />
       <article>
         {questionsIds.map((item) => (
           <div key={item} className="im-question-group">
-            <p className="im-question">{t(`Pages.Home.FAQ.Questions.Question${item}`)}</p>
+            <h4 className="im-question">{t(`Pages.Home.FAQ.Questions.Question${item}`)}</h4>
             <p className="im-answer">{t(`Pages.Home.FAQ.Questions.Answer${item}`)}</p>
           </div>
         ))}

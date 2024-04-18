@@ -3,8 +3,9 @@ import { iconsMapping } from './IconsMapping';
 import Wrapper from '../wrapper/Wrapper';
 import { ReactUtils } from 'utils';
 import './Icon.css';
+import { FontSize } from 'GlobalTypes';
 
-export default function Icon({ icon, size = 10, variant, className = '', mirrored, hide, weight = 'regular', ...rest }: IconProps) {
+export default function Icon({ icon, size = 'small', variant, className = '', mirrored, hide, weight = 'regular', ...rest }: IconProps) {
   const iconWrapperClasses = ReactUtils.conditionalClass({
     ['im-icon']: true,
     [`im-icon-${icon}`]: true,
@@ -12,9 +13,18 @@ export default function Icon({ icon, size = 10, variant, className = '', mirrore
     [`${className}`]: !!className,
   });
 
+  const sizeMap: Record<FontSize, number> = {
+    tiny: 14,
+    small: 18,
+    regular: 20,
+    large: 24,
+    huge: 40,
+    enormous: 50,
+  };
+
   const props = {
     weight,
-    size: 10 + 2 * (size - 1),
+    size: sizeMap[`${size}`],
     mirrored,
     color: variant ? `var(--${variant}-color)` : undefined,
   };

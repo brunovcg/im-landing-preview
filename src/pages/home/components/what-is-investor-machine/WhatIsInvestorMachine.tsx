@@ -11,7 +11,7 @@ export default function WhatIsInvestorMachine() {
   return (
     <section id="im-what-is-investor-machine" className="im-what-is-investor-machine">
       <div className="im-what-is-investor-machine-left">
-        <h2 className="im-is-title">{t('Pages.Home.WhatIsInvestorMachine.TitleIs')}</h2>
+        <h3 className="im-is-title">{t('Pages.Home.WhatIsInvestorMachine.TitleIs')}</h3>
         <div className="im-what-is-investor-machine-cards">
           {isList.map((item) => (
             <p className="im-is-investor-machine-card" key={item}>
@@ -20,7 +20,7 @@ export default function WhatIsInvestorMachine() {
             </p>
           ))}
         </div>
-        <h2 className="im-not-title">{t('Pages.Home.WhatIsInvestorMachine.TitleNot')}</h2>
+        <h3 className="im-not-title">{t('Pages.Home.WhatIsInvestorMachine.TitleNot')}</h3>
         <div className="im-what-is-investor-machine-cards">
           {isList.map((item) => (
             <p className="im-not-investor-machine-card" key={item}>
@@ -38,7 +38,7 @@ export default function WhatIsInvestorMachine() {
           <ul>
             {goals.map((item) => (
               <li key={item}>
-                <Icon icon="apply" size={4} variant="primary" />
+                <Icon icon="apply" size="regular" variant="primary" />
                 {t(`Pages.Home.WhatIsInvestorMachine.GoalList.Goal${item}`)}
               </li>
             ))}

@@ -27,19 +27,18 @@
   .im-testimonial-info {
     padding: 10px;
     display: flex;
-    gap: 8px;
+    gap: 4px;
     flex-direction: column;
 
     .im-testimonial-customer {
       color: var(--typeface-medium);
       font-weight: bold;
-      font-size: var(--font-size-4);
     }
 
     .im-testimonial-company {
       color: var(--typeface-light);
-      font-size: var(--font-size-2);
       font-weight: bold;
+      font-size: var(--font-size-tiny);
     }
   }
 }

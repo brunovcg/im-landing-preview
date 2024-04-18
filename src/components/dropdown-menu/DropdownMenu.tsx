@@ -74,7 +74,7 @@ export default function DropdownMenu({
           variant="primary"
           stopPropagation
           applyBorder
-          size={7}
+          size="regular"
           icon={effectiveIcon()}
           onMouseDown={(e) => e.preventDefault()}
           onClick={() =>

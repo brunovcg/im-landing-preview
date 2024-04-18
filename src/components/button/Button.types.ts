@@ -12,7 +12,7 @@ type CustomProps =
       targetBlank?: never;
     };
 
-export type ButtonProps = HTMLProps<HTMLButtonElement> &
+export type ButtonProps = Omit<HTMLProps<HTMLButtonElement>, 'size'> &
   CustomProps & {
     text: string;
     type?: 'button' | 'submit';
@@ -21,6 +21,5 @@ export type ButtonProps = HTMLProps<HTMLButtonElement> &
     styling?: 'text' | 'outlined' | 'regular';
     preventDefault?: boolean;
     stopPropagation?: boolean;
-
     size?: FontSize;
   };

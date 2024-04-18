@@ -13,7 +13,7 @@ export default function LeadGeneration() {
         <img src={LEAD_GENERATION} alt="funnel" />
       </div>
       <div className="im-lead-generation-right">
-        <h2>{t('Pages.Home.LeadGeneration.Title')}</h2>
+        <h2 id="im-better-data">{t('Pages.Home.LeadGeneration.Title')}</h2>
         <article className="im-lead-generation-messages">
           <p>{t('Pages.Home.LeadGeneration.Message1')}</p>
           <p>

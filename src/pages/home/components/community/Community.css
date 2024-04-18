@@ -1,10 +1,10 @@
 .im-community {
   width: 100%;
   min-height: 500px;
-  padding: 80px 40px 40px;
+  padding: 80px 60px 40px 60px;
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 60px 100px;
   margin-bottom: 40px;
   flex-direction: row;
 
@@ -20,16 +20,13 @@
     justify-content: space-between;
 
     h2 {
-      text-align: center;
-      font-size: var(--font-size-15);
       background: var(--error-gradient);
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      padding-bottom: 40px;
+      padding-bottom: 8px;
     }
 
     .im-community-description {
-      font-size: var(--font-size-5);
       line-height: 1.5;
       color: var(--typeface-medium);
       margin-bottom: 20px;
@@ -103,12 +100,11 @@
 
         h3 {
           color: var(--white-color);
-          font-size: var(--font-size-9);
         }
 
         p {
           color: var(--white-color);
-          font-size: var(--font-size-4);
+          font-size: var(--font-size-small);
           font-weight: bold;
         }
       }
@@ -117,7 +113,6 @@
         flex: 1;
         color: var(--white-color);
         background: var(--blue-gradient);
-        font-size: var(--font-size-5);
         padding: 20px;
         border-radius: 4px;
         display: flex;

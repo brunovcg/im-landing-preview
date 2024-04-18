@@ -35,7 +35,7 @@ export const enUS = {
         ProfessionalOnly: 'Professional Investors Only!',
         ProfessionalOnlyText:
           'The Investor Machine is not for new real estate investors with no recent experience. Experienced investors only!',
-        Title: 'Investor Machine Member Community',
+        Title: 'Member Community',
       },
       FeaturedBy: {
         Title: 'Featured By',
@@ -132,9 +132,9 @@ export const enUS = {
         IsNotList3:
           'Not for those that don`t want to be part of a learning and sharing community of professionals, or those that are selfish.',
         SecretWeapon:
-          'Investor Machine is a powerful DATA DRIVEN, CUTTING EDGE, DONE-FOR-YOU Lead Generation System and our "Machine" tells you EXACTLY who to market to, how frequently...then we actually DO THE WORK for you!',
+          'We`re a powerful DATA DRIVEN, CUTTING EDGE, DONE-FOR-YOU Lead Generation System and our "Machine" tells you EXACTLY who to market to, how frequently...then we actually DO THE WORK for you!',
         TitleIs: 'What Investor Machine is?',
-        TitleNot: 'and is not...',
+        TitleNot: 'But is not...',
       },
     },
   },

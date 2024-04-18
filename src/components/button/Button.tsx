@@ -3,12 +3,11 @@ import './Button.css';
 import { ButtonProps } from './Button.types';
 import { MouseEvent } from 'react';
 import Icon from 'components/icon/Icon';
-import { FontSize } from 'GlobalTypes';
 
 export default function Button({
   text,
   type = 'button',
-  size = 4,
+  size = 'regular',
   onClick,
   href,
   targetBlank,
@@ -53,7 +52,7 @@ export default function Button({
       style={{ fontSize: `var(--font-size-${size})`, ...handleButtonStyled() }}
       {...rest}
     >
-      {icon && <Icon icon={icon} variant={styling === 'regular' ? 'white' : variant} size={(size + 3) as FontSize} weight="bold" />}
+      {icon && <Icon icon={icon} variant={styling === 'regular' ? 'white' : variant} size={size} weight="bold" />}
       {href && (
         <a {...anchorProps} style={{ color: handleButtonStyled().color }}>
           {text}

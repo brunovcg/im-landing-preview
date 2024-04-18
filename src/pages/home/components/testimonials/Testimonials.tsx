@@ -47,12 +47,26 @@ export default function Testimonials() {
       <h2 id="im-testimonials">{t('Pages.Home.Testimonials.Title')}</h2>
 
       <div className="im-testimonials-videos-container">
-        <ButtonIcon icon="arrowLeft" variant="primary" hidden={isFirstPosition} onClick={handlePosition('sub')} size={7} />
+        <ButtonIcon
+          icon="arrowLeft"
+          variant="primary"
+          hidden={isFirstPosition}
+          onClick={handlePosition('sub')}
+          size="large"
+          className="im-arrows"
+        />
         <div className="im-testimonials-videos" ref={elementSizeRef}>
           {list.matrix?.[Number(currentPosition)]?.map((item) => <TestimonialVideoCard key={item.id} item={item} />)}
         </div>
 
-        <ButtonIcon icon="arrowRight" variant="primary" hidden={isLastPosition} onClick={handlePosition('add')} size={7} />
+        <ButtonIcon
+          icon="arrowRight"
+          variant="primary"
+          hidden={isLastPosition}
+          onClick={handlePosition('add')}
+          size="large"
+          className="im-arrows"
+        />
       </div>
       <div className="im-pages-icons">
         {list.pages.map((item) => (
@@ -62,7 +76,7 @@ export default function Testimonials() {
             weight="fill"
             variant={currentPosition === item ? 'primary' : 'grey-light'}
             onClick={() => setCurrentPosition(item)}
-            size={5}
+            size="small"
           />
         ))}
       </div>

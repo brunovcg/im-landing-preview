@@ -8,7 +8,6 @@
 
   h2 {
     padding-top: 50px;
-    font-size: var(--font-size-16);
     background: var(--blue-gradient);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -21,16 +20,14 @@
     gap: 8px;
     align-items: center;
     width: 100%;
-    padding-inline: 4px;
+    margin-inline: 20px;
     height: 100%;
     margin-bottom: 10px;
     .im-testimonials-videos {
       display: flex;
-      flex: 1;
-      gap: 20px;
-
       justify-content: center;
       height: 250px;
+      flex: 1;
       max-width: 100%;
     }
   }
@@ -41,6 +38,12 @@
 
   @media (max-width: 720px) {
     .im-pages-icons {
+      display: none;
+    }
+  }
+
+  @media (min-width: 720px) {
+    .im-arrows {
       display: none;
     }
   }
