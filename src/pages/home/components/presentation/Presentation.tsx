@@ -18,7 +18,7 @@ export default function Presentation() {
           <h1>{t('Common.InvestorMachine')}</h1>
         </div>
         <p className="im-description">{t('Pages.Home.Presentation.Description')}</p>
-        <Button variant="error" icon="info" text={t('Common.LearnMore')} />
+        <Button variant="error" icon="apply" text={t('Common.ApplyHere')} />
       </div>
       <div className="im-presentation-right"> </div>
     </section>

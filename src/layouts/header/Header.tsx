@@ -22,7 +22,7 @@ export default function Header({ appRef }: Readonly<HeaderProps>) {
     { text: t('Layouts.Header.BetterData'), size: 'small', styling: 'text', href: '#im-better-data' },
     { text: t('Layouts.Header.Testimonials'), size: 'small', styling: 'text', href: '#im-testimonials' },
     { text: t('Layouts.Header.MemberLogin'), size: 'small', icon: 'login', href: EXTERNAL_LINKS.imLogin, styling: 'outlined' },
-    { text: t('Common.LearnMore'), size: 'small', styling: 'regular', variant: 'error', icon: 'info' },
+    { text: t('Common.ApplyHere'), size: 'small', styling: 'regular', variant: 'error', icon: 'check' },
   ];
 
   useEffect(() => {
@@ -62,7 +62,7 @@ export default function Header({ appRef }: Readonly<HeaderProps>) {
       <img src={LOGO} alt="logo-investor-machine" height="40px" className="im-header-logo" />
       <div className="im-mobile-menu">
         <DropdownMenu options={dropdownOptions} height={130} width={180} position="end" />
-        <Button text={t('Common.LearnMore')} size="small" variant="error" icon="info" />
+        <Button text={t('Common.ApplyHere')} size="small" variant="error" icon="apply" />
       </div>
 
       <nav className="im-header-nav">

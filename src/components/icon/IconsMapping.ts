@@ -1,6 +1,5 @@
 import {
   Warning,
-  Info,
   SignIn,
   Play,
   ArrowCircleLeft,
@@ -19,7 +18,6 @@ export const iconsMapping = {
   check: CheckCircle,
   close: X,
   dot: DotOutline,
-  info: Info,
   login: SignIn,
   menu: List,
   play: Play,

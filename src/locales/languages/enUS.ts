@@ -3,7 +3,6 @@ export const enUS = {
     ApplyHere: 'Apply Here',
     InvestorMachine: 'Investor Machine',
     Loading: 'Loading',
-    LearnMore: 'Learn More',
   },
   Components: {
     Video: { Error: 'Video failed to load' },

@@ -48,7 +48,7 @@ export default function WhatIsInvestorMachine() {
         <div className="im-availability">
           <h3 className="im-availability-title">{t('Pages.Home.WhatIsInvestorMachine.AvailabilityTitle')}</h3>
           <p className="im-availability-text">{t('Pages.Home.WhatIsInvestorMachine.Availability')}</p>
-          <Button icon="info" text={t('Common.LearnMore')} variant="error" />
+          <Button icon="apply" text={t('Common.ApplyHere')} variant="error" />
         </div>
       </div>
     </section>

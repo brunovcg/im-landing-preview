@@ -17,17 +17,17 @@
   }
 
   .im-get-started-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
     flex-wrap: wrap;
     margin-bottom: 50px;
 
     .im-get-started-card {
       display: flex;
       flex-direction: column;
-      width: 290px;
-      height: 300px;
+      min-height: 300px;
       max-width: 100%;
       background-color: var(--background-light);
       padding: 24px 20px;
