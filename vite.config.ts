@@ -12,7 +12,7 @@ export default defineConfig({
   plugins: [react(), checker({ typescript: true })],
   build: {
     chunkSizeWarningLimit: 1700,
-    outDir: 'build',
+    outDir: 'dist',
   },
   resolve: {
     alias: {
