@@ -11,7 +11,7 @@
     padding-top: 50px;
     padding-bottom: 40px;
     text-align: center;
-    font-size: var(--font-size-14);
+    font-size: var(--font-size-16);
     background: var(--light-gradient);
     background-clip: text;
     -webkit-text-fill-color: transparent;

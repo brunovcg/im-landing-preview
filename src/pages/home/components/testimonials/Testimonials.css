@@ -8,7 +8,7 @@
 
   h2 {
     padding-top: 50px;
-    font-size: var(--font-size-14);
+    font-size: var(--font-size-16);
     background: var(--blue-gradient);
     background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -20,7 +20,7 @@
 
     h2 {
       padding: 10px;
-      font-size: var(--font-size-8);
+      font-size: var(--font-size-10);
 
       background-clip: text;
       -webkit-text-fill-color: transparent;

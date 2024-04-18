@@ -1,7 +1,8 @@
 .im-presentation {
   width: 100%;
   display: grid;
-  min-height: 450px;
+  height: 55vh;
+  min-height: 500px;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   padding: 50px;
 
