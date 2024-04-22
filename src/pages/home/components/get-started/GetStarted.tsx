@@ -1,9 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import './GestStarted.css';
 import { Button } from 'components';
+import { useNavigator } from 'hooks';
 
 export default function GetStarted() {
   const { t } = useTranslation();
+  const { navigateTo } = useNavigator();
 
   const cards = [1, 2, 3, 4] as const;
 
@@ -22,7 +24,7 @@ export default function GetStarted() {
           </div>
         ))}
       </div>
-      <Button text={t('Common.ApplyHere')} variant="error" icon="apply" />
+      <Button text={t('Common.ApplyHere')} variant="error" icon="apply" onClick={navigateTo('apply')} />
     </section>
   );
 }

@@ -3,9 +3,11 @@ import './Community.css';
 import NETWORKING from 'assets/images/networking.png';
 import RED_GEAR from 'assets/images/red_gear.png';
 import { Button } from 'components';
+import { useNavigator } from 'hooks';
 
 export default function Community() {
   const { t } = useTranslation();
+  const { navigateTo } = useNavigator();
 
   const listItems = [1, 2, 3, 4] as const;
 
@@ -34,7 +36,7 @@ export default function Community() {
           </div>
           <div className="im-community-apply">
             <h3>{t('Pages.Home.Community.ApplyMessage')}</h3>
-            <Button text={t('Common.ApplyHere')} variant="error" icon="apply" />
+            <Button text={t('Common.ApplyHere')} variant="error" icon="apply" onClick={navigateTo('apply')} />
           </div>
         </div>
       </div>

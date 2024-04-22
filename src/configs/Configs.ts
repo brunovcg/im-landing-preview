@@ -1,10 +1,13 @@
 /* eslint-disable sonarjs/no-duplicate-string */
 export default abstract class Configs {
   static readonly EXTERNAL_LINKS = {
-    previewDemo: 'https://player.vimeo.com/video/743196213?title=0&byline=0&wmode=transparent&autopause=0',
-    videoBackground: 'https://www.youtube.com/watch?v=t3e1h9m_3lo',
     imLogin: 'https://app.theinvestormachine.com/',
     calendar: 'https://api.leadconnectorhq.com/widget/appointment/service/imchat?group=imteam',
+  };
+
+  static readonly DEMO_VIDEOS = {
+    preview: { id: 743196089 },
+    full: { id: 743196213 },
   };
 
   static readonly TESTIMONIALS = [

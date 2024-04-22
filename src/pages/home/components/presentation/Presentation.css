@@ -1,10 +1,9 @@
 .im-presentation {
   width: 100%;
   display: grid;
-  height: 57vh;
-  min-height: 500px;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   padding: 50px;
+  gap: 80px;
 
   @media (max-width: 720px) {
     padding: 30px;

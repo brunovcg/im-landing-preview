@@ -1,6 +1,7 @@
 export const enUS = {
   Common: {
     ApplyHere: 'Apply Here',
+    Back: 'Back',
     InvestorMachine: 'Investor Machine',
     Loading: 'Loading',
   },
@@ -20,6 +21,12 @@ export const enUS = {
     },
   },
   Pages: {
+    Apply: {
+      Message:
+        'If you`re an active real estate investor already advertising to generate motivated seller leads...we`d love to tell you more about our `Done for you` solution to see if it`s a fit!',
+      NextStep: 'Pick a time that works for you, tell us a bit about your business...and we`ll chat!',
+      Title: 'Next Step: Schedule a Call to Chat With Us!',
+    },
     Home: {
       Community: {
         ApplyMessage: 'Think you`ve got what it takes? Apply and schedule a no-obligation call with our team to learn more.',

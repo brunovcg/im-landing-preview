@@ -1,9 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import './WhatIsInvestorMachine.css';
 import { Button, Icon } from 'components';
+import { useNavigator } from 'hooks';
 
 export default function WhatIsInvestorMachine() {
   const { t } = useTranslation();
+  const { navigateTo } = useNavigator();
 
   const isList = [1, 2, 3] as const;
   const goals = [1, 2] as const;
@@ -48,7 +50,7 @@ export default function WhatIsInvestorMachine() {
         <div className="im-availability">
           <h3 className="im-availability-title">{t('Pages.Home.WhatIsInvestorMachine.AvailabilityTitle')}</h3>
           <p className="im-availability-text">{t('Pages.Home.WhatIsInvestorMachine.Availability')}</p>
-          <Button icon="apply" text={t('Common.ApplyHere')} variant="error" />
+          <Button icon="apply" text={t('Common.ApplyHere')} variant="error" onClick={navigateTo('apply')} />
         </div>
       </div>
     </section>

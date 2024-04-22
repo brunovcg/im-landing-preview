@@ -10,7 +10,7 @@ function VideoVimeo(
   { id, thumbnail, width, height, onClick, muted = false, autoplay = true }: Readonly<VideoVimeoProps>,
   ref: ForwardedRef<VimeoVideoRef>
 ) {
-  const [initialized, setInitialized] = useState(false);
+  const [initialized, setInitialized] = useState(!thumbnail);
   const [player, setPlayer] = useState<Player | Record<never, never>>({});
   const classes = ReactUtils.conditionalClass({
     ['im-video-vimeo']: true,

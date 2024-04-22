@@ -9,12 +9,14 @@ import {
   List,
   X,
   CheckCircle,
+  ArrowUDownLeft,
 } from '@phosphor-icons/react';
 
 export const iconsMapping = {
   apply: CheckFat,
   arrowLeft: ArrowCircleLeft,
   arrowRight: ArrowCircleRight,
+  Back: ArrowUDownLeft,
   check: CheckCircle,
   close: X,
   dot: DotOutline,

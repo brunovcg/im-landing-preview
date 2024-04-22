@@ -1,15 +1,15 @@
-import Home from 'pages/home/Home';
-import MoreLeadsPreview from 'pages/more-leads-preview/more-leads-preview';
-import MoreLeads from 'pages/more-leads/MoreLeads';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import useRoutes from './useRoutes';
 
 export default function Router() {
+  const { routes } = useRoutes();
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/more-leads-preview" element={<MoreLeadsPreview />} />
-        <Route path="/more-leads" element={<MoreLeads />} />
+        {Object.entries(routes).map(([key, props]) => (
+          <Route key={key} {...props} />
+        ))}
       </Routes>
     </BrowserRouter>
   );

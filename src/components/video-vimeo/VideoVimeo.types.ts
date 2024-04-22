@@ -2,7 +2,7 @@ import Player from '@vimeo/player';
 
 export type VideoVimeoProps = {
   id: number;
-  thumbnail: string;
+  thumbnail?: string;
   height?: number;
   width?: number;
   onClick?: () => void;

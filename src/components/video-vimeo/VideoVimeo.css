@@ -1,7 +1,6 @@
 .im-video-vimeo {
   position: relative;
   overflow: hidden;
-  padding-bottom: 56.25%;
   border-radius: 8px;
 
   .im-thumbnail {
